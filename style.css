@@ -47,10 +47,11 @@ body
 }
 header
 {
+    width: 140px;
     position: absolute;
     left: 50%;
     transform: translate(-50%, 0);
-    top: -60%;
+    top: calc(-50% + 5%);
     border-radius: 50%;
 }
 header img

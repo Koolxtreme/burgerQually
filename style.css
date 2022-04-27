@@ -1,0 +1,86 @@
+:root
+{
+    --mainRed : #eb1f28;
+    --mainYellow: #da9b4f;
+    --secondYellow: #d7a24b;
+    --thirdYellow: #d7ac5e;
+}
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html
+{
+    font-size: 62.5%;
+}
+body
+{
+    background-color: #000000;
+    opacity: 1;
+    background-image:  radial-gradient(#d7ac5e 2px, transparent 2px), radial-gradient(#d7ac5e 2px, #000000 2px);
+    background-size: 80px 80px;
+    background-position: 0 0,40px 40px;
+    font-size: 1.3rem;
+}
+
+/*      Main box        */
+.wrapper
+{
+    width: 90%;
+    height: 90vh;
+    margin: 5vh auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.main--container
+{
+    position: relative;
+    background-color: rgba(255, 255, 255, .5);
+    border: 10px solid;
+    border-image-slice: 1;
+    border-width: 5px;
+    border-image-source: linear-gradient(to left, #eb1f28, #da9b4f);
+    padding: 20px;
+}
+header
+{
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 0);
+    top: -50%;
+    border-radius: 50%;
+}
+header img
+{
+    width: 100%;
+    object-fit: scale-down;
+}
+main
+{
+    margin-top: 20px;
+    text-align: justify;
+}
+main h1
+{
+    text-align: center;
+}
+.form
+{
+    margin-top: 20px;
+}
+.quallyElement
+{
+    margin-top: 10px;
+}
+.child
+{
+    display: flex;
+    justify-content: space-evenly;
+}
+.child select
+{
+    overflow: scroll;
+}

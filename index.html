@@ -7,7 +7,6 @@
     <title>BurguerQualy</title>
     <link rel="shortcut icon" href="https://i.postimg.cc/5yjHQDgy/burguerlogo.jpg" type="image/x-icon">
     <link rel="stylesheet" href="./style.css">
-    <link rel="stylesheet" href="./desktop.css" media="(min-width: 600px)">
 </head>
 <body>
     <div class="wrapper">
@@ -20,13 +19,43 @@
                     <h1>Bienvenido</h1>
                     <p>Llena los espacios y te ayudaremos a tener una idea de la calificación</p>
                 </div>
-                <div class="form">
+                <div class="form" id="form">
                     <div class="quallyElement parent">
                         <h3 class="element--name">Pan</h3>
-                        <p class="element--description">Lo inicial, la parte por donde comienza y finaliza una buena burguer</p>
+                        <p class="element--description">Lo inicial, la parte por donde comienza y finaliza una buena burger</p>
                         <div class="quallyElement child">
                             <h3 class="element--name">Sabor</h3>
-                            <select name="valor" class="valor" >
+                            <select name="valor" class="valor" id="breadFlav">
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                                <option value="6">6</option>
+                                <option value="7">7</option>
+                                <option value="8">8</option>
+                                <option value="9">9</option>
+                                <option value="10">10</option>
+                            </select>
+                        </div>
+                        <div class="quallyElement child">
+                            <h3 class="element--name">Consistencia</h3>
+                            <select name="valor" class="valor" id="breadCons">
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                                <option value="6">6</option>
+                                <option value="7">7</option>
+                                <option value="8">8</option>
+                                <option value="9">9</option>
+                                <option value="10">10</option>
+                            </select>
+                        </div>
+                        <div class="quallyElement child">
+                            <h3 class="element--name">Cuidado</h3>
+                            <select name="valor" class="valor" id="breadCare">
                                 <option value="1">1</option>
                                 <option value="2">2</option>
                                 <option value="3">3</option>
@@ -40,10 +69,149 @@
                             </select>
                         </div>
                     </div>
+                    <div class="quallyElement parent">
+                        <h3 class="element--name">Carne</h3>
+                        <p class="element--description">Lo inicial, la parte por donde comienza y finaliza una buena burger</p>
+                        <div class="quallyElement child">
+                            <h3 class="element--name">Sabor</h3>
+                            <select name="valor" class="valor" id="meatFlav">
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                                <option value="6">6</option>
+                                <option value="7">7</option>
+                                <option value="8">8</option>
+                                <option value="9">9</option>
+                                <option value="10">10</option>
+                            </select>
+                        </div>
+                        <div class="quallyElement child">
+                            <h3 class="element--name">Consistencia</h3>
+                            <select name="valor" class="valor" id="meatCons">
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                                <option value="6">6</option>
+                                <option value="7">7</option>
+                                <option value="8">8</option>
+                                <option value="9">9</option>
+                                <option value="10">10</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="quallyElement parent">
+                        <h3 class="element--name">Condimentos</h3>
+                        <p class="element--description">Lo inicial, la parte por donde comienza y finaliza una buena burger</p>
+                        <div class="quallyElement child">
+                            <h3 class="element--name">Salsas</h3>
+                            <select name="valor" class="valor" id="sauces">
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                                <option value="6">6</option>
+                                <option value="7">7</option>
+                                <option value="8">8</option>
+                                <option value="9">9</option>
+                                <option value="10">10</option>
+                            </select>
+                        </div>
+                        <div class="quallyElement child">
+                            <h3 class="element--name">Quesos</h3>
+                            <select name="valor" class="valor" id="cheese">
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                                <option value="6">6</option>
+                                <option value="7">7</option>
+                                <option value="8">8</option>
+                                <option value="9">9</option>
+                                <option value="10">10</option>
+                            </select>
+                        </div>
+                        <div class="quallyElement child">
+                            <h3 class="element--name">Adiciones</h3>
+                            <select name="valor" class="valor" id="aditions">
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                                <option value="6">6</option>
+                                <option value="7">7</option>
+                                <option value="8">8</option>
+                                <option value="9">9</option>
+                                <option value="10">10</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="quallyElement parent">
+                        <h3 class="element--name">Vegetales</h3>
+                        <p class="element--description">Lo inicial, la parte por donde comienza y finaliza una buena burguer</p>
+                        <div class="quallyElement child">
+                            <h3 class="element--name">Frescura</h3>
+                            <select name="valor" class="valor" id="vegFresh">
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                                <option value="6">6</option>
+                                <option value="7">7</option>
+                                <option value="8">8</option>
+                                <option value="9">9</option>
+                                <option value="10">10</option>
+                            </select>
+                        </div>
+                        <div class="quallyElement child">
+                            <h3 class="element--name">Disposicion</h3>
+                            <select name="valor" class="valor" id="vegDispo">
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                                <option value="6">6</option>
+                                <option value="7">7</option>
+                                <option value="8">8</option>
+                                <option value="9">9</option>
+                                <option value="10">10</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="quallyElement parent">
+                        <h3 class="element--name">Sabor conjunto</h3>
+                        <p class="element--description">Espacio para calificar el sabor del conjunto y la creatividad</p>
+                        <div class="quallyElement child" style="justify-content: flex-end;">
+                            <select name="valor" class="valor" id="fullFlav">
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                                <option value="6">6</option>
+                                <option value="7">7</option>
+                                <option value="8">8</option>
+                                <option value="9">9</option>
+                                <option value="10">10</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="resultado">
+                        <p id="resultado">0</p>
+                    </div>
+                    <button class='calc-btn'>Calcular</button>
                 </div>
             </main>
         </div>
     </div>
-    <script src="./main.js"></script>
+    <script async defer src="./main.js"></script>
 </body>
 </html>

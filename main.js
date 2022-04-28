@@ -91,6 +91,5 @@ let calcularTotal = () =>
 
 calcBtn.addEventListener('click', ()=>{
     let x = calcularTotal();
-    console.log(x);
-    imprimirResultado(x)
+    imprimirResultado(x.toFixed(1))
 })
